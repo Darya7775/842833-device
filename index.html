@@ -5,42 +5,20 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <h1 class="visuality-hidden">Главная страница сайта</h1><!-- comment 001: нимание на отступы: они должны быть одинаковы по всему документы, сейчас у тебя 2 пробела или 4 пробела - по разному. Выбери один стиль. -->
-  	<header class="main-header"><!-- comment 002: Название класса из двух слов надо писать через тире: main-header. А еще английские слова нужно писать без ошибок, сейчас у тебя в слове header ошибка. Пользуйся переводчиком в интернете, чтобы посмотреть правильное написание - это нормальная практика. По всей разметке такая история.-->
+    <h1 class="visuality-hidden">Главная страница сайта</h1>
+  	<header class="main-header">
       <div class="container">
-        <a href="#" class="main-header__logo">Device</a><!-- comment 003: Это логотип, но не заголовок. Либо просто текст в ссылке, либо картинка.-->
-
+        <a href="#" class="main-header__logo">Device</a>
         <label for="site-search">Поиск по сайту</label>
-  		<input id="site-search" type="search" name="site-search" class="main-header__search" placeholder="Поиск по сайту">
-
-  		<ul class="main-header__account account-menu">
-  		  <li class="account-menu__item"><a href="#">Войти</a></li>
-  		</ul>
-
-  		<ul class="main-header__cart cart-menu">
-  		  <li class="cart-menu__item"><a class="cart-menu__item--wishlist" href="#">Сравнить</a></li>
-  		  <li class="cart-menu__item"><a class="cart-menu__item--cart" href="#">Корзина</a></li>
+  		  <input id="site-search" type="search" name="site-search" class="main-header__search" placeholder="Поиск по сайту">
+        <ul class="main-header__account account-menu">
+  		    <li class="account-menu__item"><a href="#">Войти</a></li>
+  		  </ul>
+  		  <ul class="main-header__cart cart-menu">
+  		    <li class="cart-menu__item"><a class="cart-menu__item--wishlist" href="#">Сравнить</a></li>
+  		    <li class="cart-menu__item"><a class="cart-menu__item--cart" href="#">Корзина</a></li>
   	    </ul>
-
-  		<nav class="main-navigation"><!-- comment 005: Обрати внимание: каталог имеет плюсик справа - при клике на плюсик будет открываться меню сайта. Оно есть в скрытых слоях в макетах. А доставка, гарантия и контакты - это уже вспомогательное меню, а не основное. Я сейчас покажу как сделать лучше.
-
-
-          <a href="#" class="main-menu-toggle">Каталог</a>  Кнопка нужно тут просто для открытия и скрытия меню основного
-          <ul class="main-menu">
-            <li class="main-menu__item"><a href="#">Виртуальная реальность</a></li>
-            <li class="main-menu__item"><a href="#">Моноподы для селфи</a></li>
-            <li class="main-menu__item"><a href="#">Экшн-камеры</a></li>
-            <li class="main-menu__item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="main-menu__item"><a href="#">Умные часы</a></li>
-            <li class="main-menu__item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-          <ul class="toolbar-menu">
-            <li class="toolbar-menu__item"><a href="#">Доставка</a></li>
-            <li class="toolbar-menu__item"><a href="#">Гарантия</a></li>
-            <li class="toolbar-menu__item"><a href="#">Контакты</a></li>
-          </ul>
-
-  		-->
+  		  <nav class="main-navigation">
           <a href="#" class="main-menu__toggle">Каталог</a>
           <ul class="main-menu">
             <li class="main-menu__item"><a href="#">Виртуальная реальность</a></li>
@@ -50,28 +28,17 @@
             <li class="main-menu__item"><a href="#">Умные часы</a></li>
             <li class="main-menu__item"><a href="#">Квадрокоптеры</a></li>
           </ul>
-
           <ul class="toolbar-menu">
             <li class="toolbar-menu__item"><a href="#">Доставка</a></li>
             <li class="toolbar-menu__item"><a href="#">Гарантия</a></li>
             <li class="toolbar-menu__item"><a href="#">Контакты</a></li>
           </ul>
-
-<!--
-  			<ul>
-  				<li><a href="#">Каталог товаров</a></li>
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
--->
-  		</nav>
+  		  </nav>
       </div>
   	</header>
-
   	<main class="unique-content">
   	  <div class="container">
-  	    <section class="main-slider"><!-- comment 006: Название класса слишком конкретное. Что если на месте селфи-палки будет другая картинка? Название класса потеряет смысл. Поэтому тут надо назвать секцию примерно: main-slider. Почему slider - потому что картинки будут меняться, всего будет 3 картинки, ни тоже скрыты у тебя в слоях в макете. .-->
+  	    <section class="main-slider">
           <h2 class="visuality-hidden">Главный слайдер</h2>
 
   	      <div class="main-slider__item">
@@ -84,7 +51,7 @@
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
-                <td> Карбон</td>
+                <td>Карбон</td>
               </tr>
               <tr>
                 <td>Длина палки</td>
@@ -93,106 +60,129 @@
               </tr>
             </table>
   	      </div>
-
-  		</section>
-
+          <div class="two-slider">
+            <img src="http://placehold.it/150x100" alt="Фитнес-браслет" class="">
+            <span class="two-slider__number">02</span>
+            <h3 class="two-slider__title">Худеем правильно!</h3>
+            <p class="two-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a href="#" class="two-slider__link">Подробнее</a>
+            <table class="two-slider__features">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+          <div class="three-slider"> 
+            <img src="http://placehold.it/150x100" alt="Фитнес-браслет" class="Квадрокоптер">
+            <span class="three-slider__number">03</span>
+            <h3 class="three-slider__title">Порхает как бабочка, жалит как пчела! </h3>
+            <p class="three-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p> 
+            <a href="#" class="three-slider__link">Подробнее</a>
+            <table class="three-slider__features">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
+  	    </section>
         <section class="navigation-catalog">
-          <!-- comment 009: Если название класса из нескольких слов - через тире, пробелы не работают И обрати опять же на написание на английском.-->
           <h2 class="visuality-hidden">Навигация по каталогу</h2>
           <ul class="catalog-menu">
-            <li class="catalog-menu__item">
-              <a href="#" class="catalog-menu__link">
-                <span class="catalog-menu__icon catalog-menu__icon--virtual"></span>
-                Виртуальная реальность
-              </a>
-            </li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--virtual"></span>Виртуальная реальность</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--monopod"></span>Моноподы для селфи</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--action"></span>Экшн-камеры</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--fitness"></span>Фитнес-браслеты</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--clock"></span>Умные часы</a></li>
+            <li class="catalog-menu__item"><a href="#" class="catalog-menu__link">
+              <span class="catalog-menu__icon catalog-menu__icon--quadrocopter"></span>Квадрокоптеры</a></li>
           </ul>
         </section>
-
-  		<section class="services"><!-- comment 010: Название классов через запятую не работают, вот тут как раз пробел надо.-->
-  			<h2 class="visuality-hidden">Доставка, гарантия, кредит</h2>
-  			<ul class="services-tabs">
-  				<li class="services-tabs__item services-tabs__item--active"><a href="#">Доставка</a></li>
-  				<li class="services-tabs__item"><a href="#">Гарантия</a></li>
-  				<li class="services-tabs__item"><a href="#">Кредит</a></li>
-  			</ul>
-  			<div class="services-description services-description--delivery">
-  				<h3 class="services-description__title">Доставка</h3>
-  				<p class="services-description__description">Мы с удовольствием доставим Ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
-  			</div>
-
-  			<!-- ... -->
-  		</section>
-  	  </div>
-
-
-
-  		<section class="partners">
-  			<h2>Партнеры</h2>
-  			<ul>
-  				<li><a href="#"><img src="" alt=""></a></li>
-  				<li><a href="#">sp Gadgets</a></li>
-  				<li><a href="#">GoPro</a></li>
-  				<li><a href="#">VIVE</a></li>
-  			</ul>
-  		</section>
-
-  		<section class="about-us">
-  			<h2 class="about-us__title">О нас</h2>
-  			<p>Огромный выбор гаджетов не оставит равнодушными гика, который есть в каждом из нас.</p>
-  			<p>Мы можем доставить Ваш товар в самые отдаленные точки России!
-  			DEVICE работает со многими транспортными компаниями.</p>
-  			<ul>
-  				<li><a href="#">Деловые линии</a></li>
-  				<li><a href="#">Автотрейдинг</a></li>
-  				<li><a href="#">ЖелДорЭкспедиция</a></li>
-  			</ul>
-  			<a href="#" class="button button--primary about-us__button">Подробнее о нас</a>
-  		</section>
-  		<section class="contacts">
-  			<h2>Контакты</h2>
-  			<p>Вы можете выбрать товар сами, заехав в наш офис. Заодно, Вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-
-  			<!-- comment 011: Тут либо картинка будет либо iframe с картой, input тут не нужен.-->
-
-  			<a href="#">Напишите нам</a>
-  		</section>
+  		  <section class="services">
+    			<h2 class="visuality-hidden">Доставка, гарантия, кредит</h2>
+    			<ul class="services-tabs">
+    				<li class="services-tabs__item services-tabs__item--active"><a href="#">Доставка</a></li>
+    				<li class="services-tabs__item"><a href="#">Гарантия</a></li>
+    				<li class="services-tabs__item"><a href="#">Кредит</a></li>
+    			</ul>
+    			<div class="services-description services-description--delivery">
+    				<h3 class="services-description__title">Доставка</h3>
+    				<p class="services-description__description">Мы с удовольствием доставим Ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж.</p>
+  		    </div>
+          <div class="services-description services-description--warranty">
+            <h3 class="services-description__title">Гарантия</h3>
+            <p class="services-description__description">Если из-за возгорания купленного у нас товара у Вас сгорит дом-не переживайте, мы выдадим Вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-description services-description--credit">
+            <h3 class="services-description__title">Кредит</h3>
+            <p class="services-description__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для Вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+  		  </section>
+  		  <section class="partners">
+  				<h2>Партнеры</h2>
+  				<ul>
+  					<li class="one-partner"><a href="#"><img src="#" alt="dji">dji</a></li>
+  					<li class="two-partner"><a href="#"><img src="#" alt="sp Gadgets">sp Gadgets</a></li>
+  					<li class="three-partner"><a href="#"><img src="#" alt="GoPro">GoPro</a></li>
+  					<li class="four-partner"><a href="#"><img src="#" alt="VIVE">VIVE</a></li>
+  				</ul>
+  		  </section>
+  		  <section class="about-us">
+  				<h2 class="about-us__title">О нас</h2>
+  				<p>Огромный выбор гаджетов не оставит равнодушными гика, который есть в каждом из нас.</p>
+  				<p>Мы можем доставить Ваш товар в самые отдаленные точки России!
+  				DEVICE работает со многими транспортными компаниями.</p>
+  				<ul class="courier-services">
+  					<li><a href="#">Деловые линии</a></li>
+  					<li><a href="#">Автотрейдинг</a></li>
+  					<li><a href="#">ЖелДорЭкспедиция</a></li>
+  				</ul>
+  				<a href="#" class="button button--primary about-us__button">Подробнее о нас</a>
+  			</section>
+  			<section class="contacts">
+  				<h2>Контакты</h2>
+  				<p>Вы можете выбрать товар сами, заехав в наш офис. Заодно, Вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+  				<!-- map-->
+  				<a href="#">Напишите нам</a>
+  		  </section>
+      </div>
+      <div class="modal">
+      	<!-- форма "напишите нам" -->
+      </div>
   	</main>
-
   	<footer class="main-footer">
-
-  		<a href="#" class="main heder logo"><h1>Device</h1></a>
-
-  		<ul><!-- comment 012: Можно в одно меню объединить три элемента.-->
-  			<li><a href="#">Войти</a></li>
+  		<a href="#" class="main-footer__logo">Device</a>
+  		<ul class="main-footer__account account-menu">
+  		  <li class="account-menu__item"><a href="#">Войти</a></li>
   		</ul>
-  		<ul>
-  			<li><a href="#">Сравнить</a></li>
-  			<li><a href="#">Корзина</a></li>
-  		</ul>
-
+  		<ul class="main-footer__cart cart-menu">
+  		  <li class="cart-menu__item"><a class="cart-menu__item--wishlist" href="#">Сравнить</a></li>
+  		  <li class="cart-menu__item"><a class="cart-menu__item--cart" href="#">Корзина</a></li>
+  	  </ul>
   		<p>г. Москва, ул. Строителей, 15</p>
-
-  		<ul>
-  				<li><a href="#">Каталог товаров</a></li><!-- comment 013: Каталога нет тут.-->
-  				<li><a href="#">Доставка</a></li>
-  				<li><a href="#">Гарантия</a></li>
-  				<li><a href="#">Контакты</a></li>
-  		</ul>
-
+  		<ul class="toolbar-menu">
+        <li class="toolbar-menu__item"><a href="#">Доставка</a></li>
+        <li class="toolbar-menu__item"><a href="#">Гарантия</a></li>
+        <li class="toolbar-menu__item"><a href="#">Контакты</a></li>
+      </ul>
   		<a href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
-
-  		<ul>
-  			<li><a href="#">Facebook</a></li>
-  			<li><a href="#">Instagram</a></li>
-  			<li><a href="#">Telegram</a></li>
+  		<ul class="social-networks">
+  			<li class="social-networks__facebook"><a href="#">Facebook</a></li>
+  			<li class="social-networks__instagram"><a href="#">Instagram</a></li>
+  			<li class="social-networks__telegram"><a href="#">Telegram</a></li>
   		</ul>
-
   	</footer>
   </body>
 </html>
