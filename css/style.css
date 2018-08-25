@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gilroy Light'), local('Gilroy-Light'), url(fonts/Gilroy/gilroylight.woff2) format('woff2'), url(fonts/Gilroy/gilroylight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Gilroy Extra Bold'), local('Gilroy-ExtraBold'), url(fonts/Gilroy/gilroyextrabold.woff2) format('woff2'), url(fonts/Gilroy/gilroyextrabold.woff) format('woff');
+}
+body {
+	margin:0;
+	padding: 0;
+
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+ 	font-stretch: normal;
+	line-height: 2;
+	color: #464646;
+
+  	background-color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+.main_header {
+	background-color: #f7e296;
+}
+.main_header__account,
+.main_header__cart,
+.main_menu,
+.toolbar_menu {
+	list-style: none;
+}
+.goods_catalog__price {
+	font-family: "Gilroy";
+	font-weight: 300;
+}
