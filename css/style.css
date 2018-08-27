@@ -26,6 +26,13 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 .main_header {
 	background-color: #f7e296;
@@ -33,10 +40,328 @@ a {
 .main_header__account,
 .main_header__cart,
 .main_menu,
-.toolbar_menu {
+.toolbar_menu,
+.catalog_menu,
+.services_tabs,
+.brand,
+.courier_services,
+.main_footer__account,
+.main_footer__cart,
+.social_networks,
+.navigation,
+.cost,
+.color,
+.bluetooth,
+.sorting,
+.sorting-more-less,
+.goods-catalog,
+.pagination {
 	list-style: none;
 }
-.goods_catalog__price {
-	font-family: "Gilroy";
-	font-weight: 300;
+.form-search__search {
+	letter-spacing: 0.2px;
+  	text-align: left;
+  	color: rgba(0, 0, 0, 0.3);
+
 }
+.form-search__search:hover {
+  	color: rgba(0, 0, 0, 0.6);
+}
+.form-search__search:focus {
+	text-align: left;
+  	color: #000000;
+}
+.account_menu__item_header {
+	background-image: url("img/index/user.svg");
+	background-repeat: no-repeat;
+}
+.cart_menu__item--wishlist {
+	background-image: url("img/index/compare.svg");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.main_menu__toggle,
+.toolbar_menu__item {
+	font-family: "Gilroy", Arial, sans-serif; 
+	font-size: 18px;
+ 	font-weight: 800;
+ 	text-transform: uppercase;
+ 	letter-spacing: 3.6px;
+}
+.main_menu__toggle:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.main_menu__toggle:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.main_slider__title {
+	font-family: "Gilroy", Arial, sans-serif; 
+	font-size: 47.5px;
+  	font-weight: 800;
+  	color: #000000;
+}
+.main_slider__link {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18.5px;
+  	font-weight: 800;
+  	text-transform: uppercase;
+}
+.main_slider__link:hover {
+	background-color: #f0c52e;
+	color: rgb(0, 0, 0);
+}
+.main_slider__link:active  {
+	background-color: #f0c52e;
+	color: rgba(0, 0, 0, 0.3);
+}
+.features_product__value {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-style: normal;
+  	font-size: 36px;
+  	font-weight: 300;
+}
+.features_product__name {
+	font-size: 13px;
+  	font-weight: 300;
+}
+.catalog_menu {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18px;
+  	font-weight: 800;
+}
+.catalog_menu__link {
+	background-color: #f7e296;
+}
+.catalog_menu__link:hover {
+	background-color: #f0c52e;
+	color: rgb(0, 0, 0);
+}
+.catalog_menu__link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.services {
+	background-color: #e5e5e5;
+}
+.services_tabs {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18.5px;
+  	font-weight: 800;
+  	text-transform: uppercase;
+  	letter-spacing: 3.7px;
+}
+.services_tabs__item {
+	background-image: url("img/index/Layer 6 copy 5.png");
+}
+.services_tabs__item:hover {
+	background-color: #f0c52e;
+	color: #000000;
+}
+.services_tabs__item:active {
+	background-color: #000000;
+	color: #f7e184;
+}
+/*a .brand__item__1 {
+	background: url("img/index/logo-1.jpg");
+	display: block;
+	width: 260px;
+ 	height: 100px;
+}
+a .brand__item__1:hover {
+	background: url("img/index/logo-1-jpg-copy.png");
+} не работает, не знаю почему*/
+.services_description__title,
+.about_us__title,
+.contacts__title {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 47.5px;
+  	font-weight: 800;
+  	line-height: 1;
+  	letter-spacing: 0.5px;
+  	color: #000000;
+}
+.courier_services {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 16px;
+  	font-weight: 800;
+  	line-height: 2.5;
+}
+.about_us__button,
+.contacts_modal {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18.5px;
+  	font-weight: 800;
+  	line-height: 1.27;
+  	letter-spacing: 3.7px;
+}
+.about_us__button:hover,
+.contacts_modal:hover {
+	background-color: #f0c52e;
+	color: rgb(0, 0, 0);
+}
+.about_us__button:active,
+.contacts_modal:active {
+	background-color: #f0c52e;
+	color: rgba(0, 0, 0, 0.3);
+}
+.main_footer {
+  	background-color: #464646;
+}
+.account_menu__item_footer,
+.cart_menu__item--wishlist_footer,
+.cart_menu__item--cart_footer {
+	color: rgba(255, 255, 255, 0.7);
+	text-align: left;
+	background-color: #464646;
+}
+.account_menu__item_footer:hover,
+.cart_menu__item--wishlist_footer:hover,
+.cart_menu__item--cart_footer:hover {
+	color: #ffffff;
+}
+.account_menu__item_footer:active,
+.cart_menu__item--wishlist_footer:active,
+.cart_menu__item--cart_footer:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+.toolbar_menu__item_footer {
+	color: #ffffff;
+}
+.toolbar_menu__item_footer:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+.toolbar_menu__item_footer:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.phone {
+	color: #ffffff;
+	text-align: right;
+	background-color: #464646;
+}
+.address {
+	color: #ffffff;
+	text-align: left;
+	background-color: #464646;
+}
+.catalog_section_caption {
+	font-family: "Gilroy", Arial, sans-serif;
+ 	font-size: 47.5px;
+ 	font-weight: 800;
+ 	color: #000000;
+ 	text-align: left;
+ 	line-height: 1;
+}
+.navigation__item {
+	font-size: 14px;
+  	font-weight: 300;
+  	line-height: 1.71;
+  	text-align: left;
+  	color: rgba(0, 0, 0, 0.3);
+}
+.navigation__item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.navigation__item:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+.filter_caption,
+.sorting {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 17.5px;
+  	font-weight: 800;
+  	line-height: 1.4;
+ 	letter-spacing: 3.5px;
+  	text-align: left;
+ 	color: #000000;
+ 	text-transform: uppercase;
+}
+.cost_caption,
+.color_caption,
+.bluetooth_caption {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18px;
+  	font-weight: 800;
+  	line-height: 1.33;
+  	letter-spacing: 0.2px;
+  	text-align: left;
+  	color: #000000;
+}
+.color_item,
+.bluetooth_choice {
+	font-size: 14px;
+ 	font-weight: 300;
+ 	line-height: 2.86;
+  	letter-spacing: 0.1px;
+  	text-align: left;
+  	color: #000000;
+}
+.filter input {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18.5px;
+  	font-weight: 800;
+  	text-transform: uppercase;
+  	letter-spacing: 3.7px;
+  	text-align: center;
+  	color: #000000;
+}
+.sorting__item {
+	font-size: 14px;
+ 	font-weight: normal;
+ 	line-height: 1.25;
+ 	text-align: left;
+ 	color: rgba(0, 0, 0, 0.3);
+ 	text-transform: none;
+}
+.sorting__item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+.sorting__item:active {
+	color: #000000;
+}
+.goods-catalog__link {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 18px;
+  	font-weight: 800;
+  	line-height: 1.33;
+  	letter-spacing: 0.2px;
+ 	text-align: left;
+  	color: #000000;
+}
+.goods-catalog__price {
+	font-family: "Gilroy", Arial, sans-serif;
+  	font-size: 16px;
+  	font-weight: 300;
+  	line-height: 1.5;
+  	letter-spacing: 0.2px;
+  	text-align: right;
+  	color: #464646;
+}
+.pagination {
+	font-family: Gilroy;
+  	font-size: 17.5px;
+ 	font-weight: 800;
+ 	line-height: 1.4;
+  	letter-spacing: 3.5px;
+  	text-align: left;
+  	color: #000000;
+  	text-transform: uppercase;
+}
+.pagination__item--back:hover,
+.pagination__item--forward:hover {
+	color: #000000;
+}
+.pagination__item--back:active,
+.pagination__item--forward:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.pagination__item {
+	color: rgba(0, 0, 0, 0.3);
+}
+.pagination__item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination__item:active {
+	color: #000000;
+}
+
