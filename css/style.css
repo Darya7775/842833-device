@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
-  src: local('Gilroy Light'), local('Gilroy-Light'), url(fonts/Gilroy/gilroylight.woff2) format('woff2'), url(fonts/Gilroy/gilroylight.woff) format('woff');
+  src: local("Gilroy Light"), local("Gilroy-Light"), url(fonts/Gilroy/gilroylight.woff2) format('woff2'), url(fonts/Gilroy/gilroylight.woff) format('woff');
 }
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  src: local('Gilroy Extra Bold'), local('Gilroy-ExtraBold'), url(fonts/Gilroy/gilroyextrabold.woff2) format('woff2'), url(fonts/Gilroy/gilroyextrabold.woff) format('woff');
+  src: local("Gilroy Extra Bold"), local("Gilroy-ExtraBold"), url(fonts/Gilroy/gilroyextrabold.woff2) format('woff2'), url(fonts/Gilroy/gilroyextrabold.woff) format('woff');
 }
 body {
-  overflow-x: hidden;
 	margin:0;
 	padding: 0;
 
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	font-style: normal;
@@ -142,21 +141,6 @@ img {
   flex: 0 0 960px;
 }
 /*----------*/
-.catalog_menu {
-	font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-}
-.catalog_menu__link {
-	color: rgb(0, 0, 0);
-}
-.catalog_menu__link:hover {
-	color: rgb(0, 0, 0);
-}
-.catalog_menu__link:active {
-	color: rgba(0, 0, 0, 0.3);
-}
 
 a.brand__link img {
   -webkit-filter: grayscale(1);
@@ -168,13 +152,13 @@ a.brand__link:hover img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.catalog_menu {
-  padding: 0;
+.main_container {
+  overflow-x: hidden;
 }
 .services_description__title,
 .about_us__title,
 .contacts__title {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47.5px;
   font-weight: 800;
   line-height: 1;
@@ -183,15 +167,17 @@ a.brand__link:hover img {
   margin: 0;
 }
 .services_description__title {
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 .courier_services {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 2.5;
+  padding: 0;
+  padding-left: 36px;
   margin-top: 52px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 }
 .courier_services li {
   position: relative;
@@ -201,26 +187,32 @@ a.brand__link:hover img {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-image: url(../img/list-style-circle.png);
+  background-image: url("../img/list-style-circle.png");
   background-repeat: no-repeat;
   background-size: cover;
-  left: -37px;
+  left: -34px;
   top: 16px;
 }
 .about_us__button,
 .contacts_modal {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
-  letter-spacing: 3.7px;
+  letter-spacing: 3.2px;
   text-transform: uppercase;
-  padding: 9px 43px 6px 43px;
   display: inline-block;
+}
+.about_us__button {
+  padding: 9px 21px 6px 24px;
+}
+.contacts_modal {
+  padding: 9px 38px 6px 41px;
 }
 .about_us,
 .contacts {
   padding-bottom: 84px;
+  padding-top: 4px;
 }
 .about_us .about_us__button {
   position: relative;
@@ -241,7 +233,6 @@ a.brand__link:hover img {
   top: 15px;
   width: 100%;
   height: 8px;
-
   background-color: #f0c52e;
 }
 .about_us__button:hover,
@@ -256,7 +247,7 @@ a.brand__link:hover img {
 }
 
 .page_title {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
  	font-size: 47.5px;
  	font-weight: 800;
  	color: #000000;
@@ -307,50 +298,66 @@ a.brand__link:hover img {
 /*filter*/
 .filter_title,
 .sorting_title {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
- 	letter-spacing: 3.5px;
+ 	letter-spacing: 3px;
   text-align: left;
  	color: #000000;
  	text-transform: uppercase;
   margin: 0;
 }
 .form_block__title {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.2px;
   text-align: left;
   color: #000000;
-  margin: 0 0 30px;
-  padding-top: 14px;
+  margin: 0 0 36px;
+  padding-top: 11px;
   border-top: 2px solid black;
+}
+.form_block__title_bottom {
+  margin-bottom: 21px;
+}
+.form_block__title_bluetooth {
+  margin-bottom: 19px;
+}
+.bluetooth_choice {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 11px;
 }
 .color_item {
   margin: 0;
   margin-bottom: 10px;
 }
-.filter {
+.filter_background {
   position: relative;
+}
+.filter_background::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 1000px;
+  right: 50px;
+  top: 0;
+  background-color: #ebebeb;
+}
+.filter {
   margin-top: 69px;
   padding-right: 100px;
   padding-left: 60px;
 }
-.filter::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 1218px;
-  width: 424px;
-  right: 30px;
-  top: -69px;
-  background-color: #ebebeb;
-}
 .form_block {
-  margin-bottom: 30px;
+  margin-bottom: 39px;
+}
+.form_block_bottom {
+  margin-bottom: 27px;
 }
 .checkbox_input {
   display: none;
@@ -365,12 +372,18 @@ a.brand__link:hover img {
 .checkbox_input + label .checkbox_icon:hover {
   opacity: 0.6;
 }
+.checkbox_input + label .checkbox_icon:active {
+  opacity: 1;
+}
 .checkbox_input:checked + label .checkbox_icon {
   background-image: url("../img/index/checkbox-on.png");
   background-repeat: no-repeat;
 }
 .checkbox_input:checked + label .checkbox_icon:hover {
   opacity: 0.6;
+}
+.checkbox_input:checked + label .checkbox_icon:active {
+  opacity: 1;
 }
 .checkbox_input + label {
   display: -webkit-box;
@@ -380,6 +393,12 @@ a.brand__link:hover img {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+}
+.checkbox_input:disabled + label {
+  opacity: 0.25;
+}
+.radio_input:disabled + label {
+  opacity: 0.25;
 }
 .checkbox_icon {
   margin-right: 12px;
@@ -397,12 +416,18 @@ a.brand__link:hover img {
 .radio_input + label .radio_icon:hover {
   opacity: 0.6;
 }
+.radio_input + label .radio_icon:active {
+  opacity: 1;
+}
 .radio_input:checked + label .radio_icon {
   background-image: url("../img/index/radio-on.png");
   background-repeat: no-repeat;
 }
 .radio_input:checked + label .radio_icon:hover {
   opacity: 0.6;
+}
+.radio_input:checked + label .radio_icon:active {
+  opacity: 1;
 }
 .radio_input + label {
   display: -webkit-box;
@@ -417,11 +442,11 @@ a.brand__link:hover img {
   margin-right: 15px;
 }
 .filter_submit {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
-  letter-spacing: 3.7px;
+  letter-spacing: 3.1px;
   text-transform: uppercase;
   padding: 9px 43px 6px 43px;
   border: none;
@@ -483,6 +508,13 @@ a.brand__link:hover img {
 .filter_range__max {
   left: 50%;
 }
+.filter_range__min:active,
+.filter_range__max:active {
+  width: 22px;
+  height: 24px;
+  background-image: url("../img/index/filter-button_2.png");
+  background-repeat: no-repeat;
+}
 .filter_range_inputs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,7 +525,7 @@ a.brand__link:hover img {
   width: 27px;
   height: 10px;
   opacity: 0.2;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -557,7 +589,7 @@ a.brand__link:hover img {
 }
 .sorting {
   z-index: 20;
-  padding-right: 184px;
+  padding-right: 166px;
 }
 .sorting_more_less__item {
   display: inline-block;
@@ -567,15 +599,26 @@ a.brand__link:hover img {
   width: 11px;
   height: 10px;
   background-image: url("../img/catalog/triangle-up.png");
+  background-repeat: no-repeat;
   opacity: 0.2;
+  padding-right: 15px;
 }
 .sorting_more_less__more {
   display: inline-block;
   width: 11px;
   height: 10px;
   background-image: url("../img/index/icon-down-dir.png");
+  background-repeat: no-repeat;
   background-color: #ebebeb;
   opacity: 0.2;
+}
+.sorting_more_less__more:hover,
+.sorting_more_less__less:hover {
+  opacity: 0.4;
+}
+.sorting_more_less__more:active,
+.sorting_more_less__less:active {
+  opacity: 1;
 }
 .sorting_more_less__item--active a {
   opacity: 1;
@@ -587,6 +630,7 @@ a.brand__link:hover img {
 	font-size: 14px;
  	font-weight: normal;
  	line-height: 1.25;
+  letter-spacing: 0.1px;
  	text-align: left;
  	color: rgba(0, 0, 0, 0.3);
  	text-transform: none;
@@ -599,10 +643,13 @@ a.brand__link:hover img {
 .sorting__item:active {
 	color: #000000;
 }
+.sorting__item--active {
+  color: #000000;
+}
 
 /*Карточки каталога*/
 .goods_catalog__link {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -611,7 +658,7 @@ a.brand__link:hover img {
   color: #000000;
 }
 .goods_catalog__price {
-	font-family: "Gilroy", Arial, sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -632,8 +679,11 @@ a.brand__link:hover img {
 .goods_catalog__item {
   margin-bottom: 27px;
 }
+.goods_catalog__item_margin {
+  margin: 0;
+}
 .goods_catalog__button {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
@@ -708,7 +758,7 @@ a.brand__link:hover img {
   height: 56px;
   border-radius: 50%;
   border: 2px solid #dcdcdc;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.61;
@@ -752,7 +802,7 @@ a.brand__link:hover img {
 .pagination,
 .pagination__item--back,
 .pagination__item--forward {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
@@ -761,12 +811,21 @@ a.brand__link:hover img {
   color: #000000;
   text-transform: uppercase;
 }
+.pagination__item--back,
+.pagination__item--forward {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;
+}
 .pagination__item--back:hover,
 .pagination__item--forward:hover {
   color: #000000;
+  background-color: #dcdcdc;
 }
 .pagination__item--back:active,
 .pagination__item--forward:active {
+  background-color: #dcdcdc;
   color: rgba(0, 0, 0, 0.3);
 }
 .pagination__item {
@@ -778,6 +837,9 @@ a.brand__link:hover img {
 }
 
 .pagination__item:active {
+  color: #000000;
+}
+.pagination__item--active {
   color: #000000;
 }
 .pagination_wrap {
@@ -800,22 +862,6 @@ a.brand__link:hover img {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.pagination__item--forward,
-.pagination__item--back {
-  cursor: pointer;
-  background-color: #ebebeb;
-  border: none;
-  padding: 0 30px;
-}
-.pagination__item--forward:hover,
-.pagination__item--back:hover {
-  background-color: ;
-}
-.pagination__item--forward:active,
-.pagination__item--back:active {
-  background-color: ;
-}
-/* Styles 01.09.2018 */
 
 /*header*/
 .form_search__search {
@@ -830,6 +876,7 @@ a.brand__link:hover img {
 .form_search__search:focus {
   text-align: left;
   color: #000000;
+
 }
 .main_navigation {
   position: relative;
@@ -837,10 +884,18 @@ a.brand__link:hover img {
 .main_menu__toggle {
   border: none;
 }
+.main_menu__toggle::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/index/plus.svg");
+  background-repeat: no-repeat;
+}
 .main_menu__toggle,
 .toolbar_menu__item {
   display: inline-block;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
@@ -849,7 +904,7 @@ a.brand__link:hover img {
 }
 .main_menu__toggle {
   padding-left: 60px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 .main_menu__toggle {
   position: relative;
@@ -862,7 +917,7 @@ a.brand__link:hover img {
   display: none;
   text-align: left;
   text-transform: none;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   position: absolute;
@@ -883,6 +938,7 @@ a.brand__link:hover img {
   display: block;
 }
 .main_menu__item {
+  letter-spacing: 0.2px;
   display: inline-block;
   width: 232px;
   margin-bottom: 6px;
@@ -906,13 +962,14 @@ a.brand__link:hover img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-top: -2px;
   padding-right: 60px;
 }
 .toolbar_menu__item:first-child {
-  margin-right: 28px;
+  margin-right: 35px;
 }
 .toolbar_menu__item:last-child {
-  margin-left: 103px;
+  margin-left: 107px;
 }
 .main_menu__toggle:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -930,17 +987,18 @@ a.brand__link:hover img {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 185px;
+  height: 187px;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   background-color: #f7e296;
 }
 .main_header__logo {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 800;
   line-height: 48px;
   color: #000000;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
   padding-left: 58px;
 }
@@ -949,7 +1007,7 @@ a.brand__link:hover img {
   height: 48px;
   padding-left: 39px;
   background-color: transparent;
-  background-image: url(../img/index/search.svg);
+  background-image: url("../img/index/search.svg");
   background-repeat: no-repeat;
   background-position: 2px 50%;
   border: 0 none;
@@ -974,6 +1032,7 @@ a.brand__link:hover img {
 }
 .form_search__search:focus {
   border-bottom: 2px solid #000000;
+  outline-color: transparent;
 }
 .form_search__search:focus + label + .form_search__find {
   opacity: 1;
@@ -1013,10 +1072,11 @@ a.brand__link:hover img {
   -ms-flex-pack: start;
   justify-content: flex-start;
   padding-left: 60px;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 .account_menu {
+  letter-spacing: 0.2px;
   padding: 0;
   margin: 0;
 }
@@ -1055,7 +1115,7 @@ a.brand__link:hover img {
   text-align: right;
 }
 .main_header__cart {
-  margin-top: 17px;
+  margin-top: 18px;
 }
 .main_header__account__cart {
   display: -webkit-box;
@@ -1112,7 +1172,7 @@ a.brand__link:hover img {
   height: 10px;
   padding-top: 5px;
 
-  background-image: url('../img/index/compare.svg');
+  background-image: url("../img/index/compare.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1208,8 +1268,27 @@ a.brand__link:hover img {
   margin: 0;
   margin-bottom: 61px;
 }
+.catalog_menu {
+  padding: 0;
+}
 .catalog_menu__item {
   padding: 0;
+}
+.catalog_menu {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.catalog_menu__link {
+  color: rgb(0, 0, 0);
+}
+.catalog_menu__link:hover {
+  color: rgb(0, 0, 0);
+}
+.catalog_menu__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 .catalog_menu {
   min-width: 1150px;
@@ -1235,10 +1314,13 @@ a.brand__link:hover img {
   -ms-flex-pack: center;
   justify-content: center;
   height: 160px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   background-color: #f7e296;
   background-repeat: no-repeat;
   background-position: center;
+}
+.catalog_menu__icon_bottom {
+  align-items: flex-end;
 }
 .catalog_menu__icon:hover {
   background-color: #f0c52e;
@@ -1250,13 +1332,15 @@ a.brand__link:hover img {
 
 /*Главный слайдер*/
 .main_slider__title {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 47.5px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
   font-weight: 800;
   color: #000000;
   margin: 0;
-  margin-bottom: 22px;
-  line-height: 1.15;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  padding-right: 160px;
 }
 .main_slider__link__switch__wrapper {
   display: -webkit-box;
@@ -1268,17 +1352,17 @@ a.brand__link:hover img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 .main_slider__link {
   display: inline-block;
   position: relative;
   z-index: 1;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;
-  letter-spacing: 3.7px;
+  letter-spacing: 3.3px;
   text-transform: uppercase;
   padding: 9px 43px 6px 43px;
 }
@@ -1305,13 +1389,14 @@ a.brand__link:hover img {
   display: none;
 }
 .main_slider__description {
-  padding-right: 80px;
+  letter-spacing: 0.2px;
+  padding-right: 63px;
   margin-bottom: 43px;
 }
 .main_slider {
   position: relative;
   z-index: 2;
-  margin-bottom: 100px;
+  margin-bottom: 107px;
 }
 .main_slider__content {
   position: relative;
@@ -1321,19 +1406,41 @@ a.brand__link:hover img {
   content: "";
   position: absolute;
   left: 20px;
-  top: 35px;
+  top: 37px;
   width: 100px;
   height: 7px;
   background-color: #ffffff;
 }
+.unique_content {
+  overflow-x: hidden;
+  counter-reset: nomer;
+}
+.unique_content .main_slider__content::after {
+  counter-increment: nomer 1;
+  content:"0" counter(nomer);
+  position: absolute;
+  width: 100%;
+  height: 131px;
+  top: -12px;
+  right: -348px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180.5px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
 .features_product__value {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
   font-size: 36px;
   font-weight: 300;
 }
 .features_product__value td {
-  padding-right: 77px;
+  padding-right: 76px;
+  letter-spacing: 0.1px;
+  line-height: 53px;
+  padding-top: 10px;
 }
 .features_product__name {
   font-size: 13px;
@@ -1345,20 +1452,22 @@ a.brand__link:hover img {
 .main_slider__image {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 .main_slider::before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 134px;
+  height: 137px;
   left: 0;
   top: -25px;
   background-color: #f7e296;
 }
 .main_slider__content {
   position: relative;
-  padding-top: 80px;
+  padding-top: 81px;
 }
 .main_slider__switch {
   display: -webkit-inline-box;
@@ -1369,13 +1478,15 @@ a.brand__link:hover img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-right: 66px;
+  padding-right: 64px;
 }
 .main_slider__button {
   width: 12px;
   height: 12px;
   cursor: pointer;
-  padding-right: 19px;
+  background-color: #fff;
+  margin-right: 20px;
+  border: none;
   background-image: url("../img/index/slider-button-empty.svg");
   background-repeat: no-repeat;
 }
@@ -1385,17 +1496,6 @@ a.brand__link:hover img {
   cursor: pointer;
   background-image: url("../img/index/slider-button.svg");
   background-repeat: no-repeat;
-}
-.main_slider__number {
-  position: absolute;
-  right: 66px;
-  top: -13px;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 180.5px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 1.8px;
-  color: #ffffff;
 }
 .main_slider__item--active {
   display: -webkit-box;
@@ -1408,9 +1508,7 @@ a.brand__link:hover img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
 }
-
 .about-n-contacts {
   padding-top: 120px;
   padding-bottom: 88px;
@@ -1419,7 +1517,6 @@ a.brand__link:hover img {
 .contacts__title {
   position: relative;
   margin-bottom: 42px;
-  padding-top: 5px;
 }
 .contacts p {
   padding-bottom: 25px;
@@ -1431,14 +1528,14 @@ a.brand__link:hover img {
 .map {
   display: block;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 .about_us__title::before,
 .contacts__title::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -50px;
+  top: -53px;
   width: 80px;
   height: 7px;
   background-color: #000000;
@@ -1455,10 +1552,9 @@ a.brand__link:hover img {
   display: block;
   width: 100%;
   background-color: black;
-
 }
 .services_tabs__item {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .services_tabs__item--active .services_tabs__link {
   color: #f7e184;
@@ -1470,8 +1566,8 @@ a.brand__link:hover img {
   padding: 0;
   width: 278px;
   border-right: 7px solid black;
-  padding-top: 83px;
-  padding-bottom: 55px;
+  padding-top: 84px;
+  padding-bottom: 42px;
 }
 .services_tabs__link {
   display: inline-block;
@@ -1481,8 +1577,7 @@ a.brand__link:hover img {
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
-  padding: 3px 23px;
+  padding: 2px 19px;
 }
 .services_tabs__link::before {
   content: "";
@@ -1492,11 +1587,10 @@ a.brand__link:hover img {
   top: 16px;
   width: 160px;
   height: 8px;
-
   background-color: #f0c52e;
 }
-  .services_tabs__link {
-  font-family: "Gilroy", Arial, sans-serif;
+.services_tabs__link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   text-transform: uppercase;
@@ -1515,7 +1609,8 @@ a.brand__link:hover img {
 }
 .services_description {
   display: none;
-  padding-top: 95px;
+  padding-top: 94px;
+  position: relative;
 }
 .services_description--active {
   display: block;
@@ -1528,6 +1623,7 @@ a.brand__link:hover img {
 }
 .services_description__description {
   width: 426px;
+  letter-spacing: 0.2px;
 }
 .services_description__icon {
   position: absolute;
@@ -1537,20 +1633,52 @@ a.brand__link:hover img {
   right: -268px;
 }
 .services {
+  overflow: hidden;
   position: relative;
   z-index: 1;
   padding-bottom: 54px;
-  margin-bottom: 88px;
+  margin-bottom: 94px;
+  background-color: #e5e5e5;
 }
 .services::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 288px;
-  background-color: #e5e5e5;
+  height: 119px;
+  background-color: #ffffff;
+}
+.services_description--delivery::after {
+  content: "";
+  position: absolute;
+  right: -557px;
+  top: 106px;
+  width: 100%; 
+  height: 164px;
+  background-image: url("../img/index/delivery.svg");
+  background-repeat: no-repeat;
+}
+.services_description--warranty::after {
+  content: "";
+  position: absolute;
+  right: -562px;
+  top: 76px;
+  width: 100%; 
+  height: 194px;
+  background-image: url("../img/index/warranty.svg");
+  background-repeat: no-repeat;
+}
+.services_description--credit::after {
+  content: "";
+  position: absolute;
+  right: -562px;
+  top: 72px;
+  width: 100%; 
+  height: 186px;
+  background-image: url("../img/index/credit.svg");
+  background-repeat: no-repeat;
 }
 /*---------*/
 
@@ -1567,6 +1695,7 @@ a.brand__link:hover img {
   line-height: 48px;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.3px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -1585,11 +1714,12 @@ a.brand__link:hover img {
   text-align: right;
 }
 .main_footer__toolbar {
+  letter-spacing: 0.2px;
   margin-top: 4px;
 }
 .footer_toolbar__item {
   display: inline-block;
-  margin-left: 31px;
+  margin-left: 23px;
 }
 .account_cart_menu__item {
   display: inline-block;
@@ -1703,15 +1833,8 @@ a.brand__link:hover img {
 .main_footer__phone a {
   color: #ffffff;
 }
-.main_footer__decor {
-  display: inline-block;
-  height: 7px;
-  width: 80px;
-  background-color: #ffc600;
-}
 .social_networks {
   padding: 0;
-  padding-left: 15px;
   margin: 0;
   text-align: center;
 }
@@ -1762,6 +1885,16 @@ a.brand__link:hover img {
 .main_footer__bottom_line {
   margin-top: 50px;
   margin-top: 50px;
+}
+.main_footer__bottom_line::before {
+  content: "";
+  display: inline-block;
+  margin-left: 22px;
+  margin-top: 12px;
+  margin-right: 198px;
+  height: 7px;
+  width: 80px;
+  background-color: #ffc600;
 }
 .html_academy {
   display: inline-block;
@@ -1820,7 +1953,7 @@ a.brand__link:hover img {
 }
 .modal__item {
   display:block;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 17.5px;
   font-weight: 800;
   line-height: 1.4;
@@ -1848,6 +1981,7 @@ a.brand__link:hover img {
 .modal_input:invalid {
   opacity: 0.5;
   background-color: #edb5b5;
+  outline: none;
 }
 .modal__close-wrapper {
   display: -webkit-box;
@@ -1870,11 +2004,17 @@ a.brand__link:hover img {
   height: 55px;
   font-size: 0;
   top: 20px;
-  background-color: #ffffff;
+  background-color: transparent;
   background-image: url("../img/index/modal-close.svg");
   border: 0;
   opacity: 0.5;
   cursor: pointer;
+}
+.modal__close:hover {
+  opacity: 1;
+}
+.modal__close:active {
+  opacity: 0.3;
 }
 .modal__textarea {
   background-color: #F5F5F5;
@@ -1884,7 +2024,7 @@ a.brand__link:hover img {
   margin-bottom: 50px;
 }
 .modal__send  {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18.5px;
   font-weight: 800;
   line-height: 1.27;

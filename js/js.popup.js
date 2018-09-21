@@ -37,13 +37,13 @@
 
       form.addEventListener("submit", function (evt) {
         if (!login.value || !email.value) {
-        evt.preventDefault();
-        popup.classList.add("modal_error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup. classList.add ("modal_error");
+          evt.preventDefault();
+          popup.classList.add("modal_error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup. classList.add ("modal_error");
         } else {
           if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
+            localStorage.setItem("login", login.value);
           }
         }
       });

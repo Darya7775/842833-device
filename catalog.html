@@ -5,30 +5,25 @@
     <title> HTML Academy: Девайс </title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
       <header class="main_header">
         <div class="main_header__logo_wrapper">
-          <a href="#" class="main_header__logo">
+          <a href="index.html" class="main_header__logo" tabindex="1">
             Device
           </a>
         </div>
-
         <div class="row">
           <div class="col_6">
             <form class="form_search" method="post" action="#">
-
               <input id="site_search" type="search" name="site-search" class="form_search__search" placeholder="">
               <label for="site_search" class="form_search__label"> Поиск по сайту </label>
               <input type="submit" name="site_search-submit" class="form_search__find" value="Найти">
-
             </form>
           </div>
-
           <div class="col_6">
-
             <ul class="main_header__account__cart account_menu">
               <li class="account_cart_menu__item">
                 <a href="#" class="account_menu__item_header"> Валентин Петухов </a>
@@ -45,11 +40,10 @@
             </ul>
           </div>
         </div>
-
         <nav class="main_navigation">
           <div class="row">
             <div class="main_navigation_wrapper col_6">
-              <button class="main_menu__toggle"> Каталог товаров <img src="img/index/plus.svg" alt="plus"></button>
+              <button class="main_menu__toggle"> Каталог товаров </button>
               <ul class="main_menu">
                 <li class="main_menu__item">
                   <a href="#" class="main_menu__link"> Виртуальная реальность </a>
@@ -71,7 +65,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="col_6">
               <ul class="toolbar_menu">
                 <li class="toolbar_menu__item">
@@ -85,13 +78,11 @@
                 </li>
               </ul>
             </div>
-
           </div>
         </nav>
       </header>
     </div>
-
-    <main>
+    <main class="main_container">
       <div class="container">
         <h1 class="page_title"> Моноподы для селфи </h1>
         <ul class="breadcrumbs">
@@ -106,11 +97,9 @@
           </li>
         </ul>
       </div>
-
       <div class="container">
         <div class="row">
-
-          <div class="col_4">
+          <div class="col_4 filter_background">
             <div class="filter_title__wrapper">
               <h3 class="filter_title"> Фильтр: </h3>
             </div>
@@ -130,23 +119,22 @@
                   <input id="filter_range_input__max" type="text" name="max" placeholder="до 5000" class="filter_range_input">
                 </div>
               </div>
-
               <div class="form_block">
-                <h4 class="form_block__title"> Цвет </h4>
+                <h4 class="form_block__title form_block__title_bottom"> Цвет </h4>
                 <p class="color_item">
-                  <input id="black" type="checkbox" class="checkbox_input" name="black" value="Черный">
+                  <input id="black" type="checkbox" class="checkbox_input" name="black" value="Черный" disabled="" checked="">
                   <label for="black"><span class="checkbox_icon"></span> Черный </label>
                 </p>
                 <p class="color_item">
-                  <input id="white" type="checkbox" class="checkbox_input" name="white" value="Белый">
+                  <input id="white" type="checkbox" class="checkbox_input" name="white" value="Белый" disabled="">
                   <label for="white"><span class="checkbox_icon"></span> Белый </label>
                 </p>
                 <p class="color_item">
-                  <input id="blue" type="checkbox" class="checkbox_input" name="blue" value="Синий">
+                  <input id="blue" type="checkbox" class="checkbox_input" name="blue" value="Синий" checked="">
                   <label for="blue"><span class="checkbox_icon"></span> Синий </label>
                 </p>
                 <p class="color_item">
-                  <input id="red" type="checkbox" class="checkbox_input" name="red" value="Красный">
+                  <input id="red" type="checkbox" class="checkbox_input" name="red" value="Красный" checked="">
                   <label for="red"><span class="checkbox_icon"></span> Красный </label>
                 </p>
                 <p class="color_item">
@@ -154,11 +142,10 @@
                   <label for="pink"><span class="checkbox_icon"></span> Розовый </label>
                 </p>
               </div>
-
-              <div class="form_block">
-                <h4 class="form_block__title"> Bluetooth </h4>
+              <div class="form_block form_block_bottom">
+                <h4 class="form_block__title form_block__title_bluetooth"> Bluetooth </h4>
                 <p class="bluetooth_choice">
-                  <input id="bluetooth_yes" class="radio_input" type="radio" name="bluetooth" value="Есть">
+                  <input id="bluetooth_yes" class="radio_input" type="radio" name="bluetooth" value="Есть" disabled="">
                   <label for="bluetooth_yes"><span class="radio_icon"></span> Есть </label>
                 </p>
                 <p class="bluetooth_choice">
@@ -166,17 +153,15 @@
                   <label for="bluetooth_no"><span class="radio_icon"></span> Нет </label>
                 </p>
               </div>
-                <button type="submit" class="filter_submit"> Показать </button>
+              <button type="submit" class="filter_submit"> Показать </button>
             </form>
           </div>
-
           <div class="col_8">
             <div class="sorting_title__wrapper">
               <h3 class="sorting_title"> Сортировка: </h3>
-
               <ul class="sorting">
                 <li class="sorting__item">
-                  <a href="#" class="sorting__item"> По цене </a>
+                  <a href="#" class="sorting__item sorting__item--active"> По цене </a>
                 </li>
                 <li class="sorting__item">
                   <a href="#" class="sorting__item"> По типу </a>
@@ -196,11 +181,10 @@
                 </li>
               </ul>
             </div>
-
             <ul class="goods_catalog row">
               <li class="goods_catalog__item col_4">
                 <div class="goods_catalog__item__wrapper">
-                  <img src="img/catalog/item-1.jpg" alt="Любительская селфи-палка<">
+                  <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods_catalog__button__wishlist__wrapper">
                     <div class="goods_catalog__overlay"></div>
                     <button class="goods_catalog__button"> В корзина </button>
@@ -214,7 +198,7 @@
               </li>
               <li class="goods_catalog__item col_4">
                 <div class="goods_catalog__item__wrapper">
-                  <img src="img/catalog/item-2.jpg" alt="Профессиональная селфи-палка">
+                  <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   <div class="goods_catalog__button__wishlist__wrapper">
                     <div class="goods_catalog__overlay"></div>
                     <button class="goods_catalog__button"> В корзина </button>
@@ -227,41 +211,40 @@
                 </div>
               </li>
               <li class="goods_catalog__item col_4">
-                  <div class="goods_catalog__item__wrapper">
-                    <img src="img/catalog/item-3.jpg" alt="Непотопляемая селфи-палка">
-                    <div class="goods_catalog__button__wishlist__wrapper">
-                      <div class="goods_catalog__overlay"></div>
-                      <button class="goods_catalog__button"> В корзина </button>
-                      <a href="#" class="goods_catalog__wishlist"> Добавить к сравнению </a>
-                    </div>
+                <div class="goods_catalog__item__wrapper">
+                  <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <div class="goods_catalog__button__wishlist__wrapper">
+                    <div class="goods_catalog__overlay"></div>
+                    <button class="goods_catalog__button"> В корзина </button>
+                    <a href="#" class="goods_catalog__wishlist"> Добавить к сравнению </a>
                   </div>
-                  <div class="goods_catalog__link__wrapper">
-                    <h3 class="goods_catalog__link"><a href="#"> Непотопляемая селфи-палка </a></h3>
-                    <p class="goods_catalog__price"> 2500 руб. </p>
-                  </div>
+                </div>
+                <div class="goods_catalog__link__wrapper">
+                  <h3 class="goods_catalog__link"><a href="#"> Непотопляемая селфи-палка </a></h3>
+                  <p class="goods_catalog__price"> 2500 руб. </p>
+                </div>
               </li>
-              <li class="goods_catalog__item col_4">
-                  <div class="goods_catalog__item__wrapper">
-                    <img src="img/catalog/item-4.jpg" alt="Селфи-палка 'Следуй за мной'">
-                    <span class="goods_catalog__new"> New </span>
-                    <div class="goods_catalog__button__wishlist__wrapper">
-                      <div class="goods_catalog__overlay"></div>
-                      <button class="goods_catalog__button"> В корзина </button>
-                      <a href="#" class="goods_catalog__wishlist"> Добавить к сравнению </a>
-                    </div>
+              <li class="goods_catalog__item goods_catalog__item_margin col_4">
+                <div class="goods_catalog__item__wrapper">
+                  <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
+                  <span class="goods_catalog__new"> New </span>
+                  <div class="goods_catalog__button__wishlist__wrapper">
+                    <div class="goods_catalog__overlay"></div>
+                    <button class="goods_catalog__button"> В корзина </button>
+                    <a href="#" class="goods_catalog__wishlist"> Добавить к сравнению </a>
                   </div>
-                  <div class="goods_catalog__link__wrapper">
-                    <h3 class="goods_catalog__link"><a href="#"> Селфи-палка "Следуй за мной" </a></h3>
-                    <p class="goods_catalog__price"> 4900 руб. </p>
-                  </div>
+                </div>
+                <div class="goods_catalog__link__wrapper">
+                  <h3 class="goods_catalog__link"><a href="#"> Селфи-палка "Следуй за <br> мной" </a></h3>
+                  <p class="goods_catalog__price"> 4900 руб. </p>
+                </div>
               </li>
             </ul>
-
             <nav class="pagination_wrap">
-              <button class="pagination__item--back"> Назад </button>
+              <a href="#" class="pagination__item--back"> Назад </a>
               <ul class="pagination">
                 <li class="pagination__item">
-                  <a href="#" class="pagination__item"> 1 </a>
+                  <a href="#" class="pagination__item pagination__item--active"> 1 </a>
                 </li>
                 <li class="pagination__item">
                   <a href="#" class="pagination__item"> 2 </a>
@@ -270,7 +253,7 @@
                   <a href="#" class="pagination__item"> 3 </a>
                 </li>
               </ul>
-              <button class="pagination__item--forward"> Вперед </button>
+              <a href="#" class="pagination__item--forward"> Вперед </a>
             </nav>
           </div>
         </div>
@@ -278,10 +261,9 @@
     </main>
     <footer class="main_footer">
       <div class="container">
-
         <div class="row">
           <div class="col_6">
-            <a href="/" class="main_footer__logo"> Device </a>
+            <a href="index.html" class="main_footer__logo"> Device </a>
           </div>
           <div class="col_6">
             <ul class="main_footer__toolbar footer_toolbar">
@@ -300,7 +282,6 @@
             </ul>
           </div>
         </div>
-
         <div class="row">
           <div class="col_3">
             <p class="main_footer__address"> г. Москва, ул. Строителей, 15 </p>
@@ -322,24 +303,30 @@
             <p class="main_footer__phone">Тел.: <a href="tel:+74954959595"> +7 (495) 495-95-95 </a></p>
           </div>
         </div>
-
         <div class="row main_footer__bottom_line">
-          <div class="col_3">
-            <span class="main_footer__decor"></span>
-          </div>
           <div class="col_6">
             <ul class="main_footer__social_networks social_networks">
               <li>
-                <a href="#" class="social_networks__facebook"><span class="visuality_hidden"> Facebook </span></a>
+                <a href="#" class="social_networks__facebook">
+                  <span class="visuality_hidden"> Facebook </span>
+                </a>
               </li>
               <li>
-                <a href="#" class="social_networks__instagram"><span class="visuality_hidden"> Instagram </span></a></li>
+                <a href="#" class="social_networks__instagram">
+                  <span class="visuality_hidden"> Instagram </span>
+                </a>
+              </li>
               <li>
-                <a href="#" class="social_networks__twitter"><span class="visuality_hidden"> Twitter </span></a></li>
+                <a href="#" class="social_networks__twitter">
+                  <span class="visuality_hidden"> Twitter </span>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col_3 text_right">
-            <a href="#" class="html_academy"><span class="visuality_hidden"> HTML Academy </span></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="html_academy">
+              <span class="visuality_hidden"> HTML Academy </span>
+            </a>
           </div>
         </div>
       </div>
